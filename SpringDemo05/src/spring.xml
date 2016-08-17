@@ -3,7 +3,7 @@
         "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
-	<bean id="triangle" class="org.puneeth.springframework.Triangle">
+	<bean id="triangle" class="org.puneeth.springframework.Triangle" name="triangle-name">
 		<property name="pointA" ref="point1" />
 		<property name="pointB">
 			<bean class="org.puneeth.springframework.Point">
@@ -23,5 +23,7 @@
 		<property name="x" value="0" />
 		<property name="y" value="0" />
 	</bean>
+
+	<alias name="triangle" alias="triangle-alias" />
 
 </beans>
