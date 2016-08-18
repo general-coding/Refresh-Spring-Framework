@@ -3,7 +3,7 @@
         "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
-	<bean id="parentTriangle" class="org.puneeth.springframework.Triangle">
+	<bean id="parentTriangle" class="org.puneeth.springframework.Triangle" abstract="true">
 		<property name="points">
 			<list>
 				<ref bean="pointA" />
